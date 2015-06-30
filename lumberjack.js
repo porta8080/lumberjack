@@ -56,31 +56,18 @@ $(function(){
             active_item.addClass('active');  
         }
         
-        /*slider.find('.item').each(function(){
-           $(this).css({width: sw,height: sw});
-        });*
-        /*slider.find('.item').each(function(i){
-            _this = $(this);
-            if(!i) _this.addClass('active');
-        }); */
-        
-       // var wrapper = $('<div class="wrapper"></div>');
-        //slider.append(wrapper);
-       // wrapper.append(slider.find('.item'));
         startSliding(slider,slider.outerWidth(),200,3000,'swing');
     });
     
     var dropdowns = $('.dropdown'), submenus, link;
     dropdowns.each(function(){
         _this = $(this);
-        //link = _this.find('a');
         link = _this.find(">:first-child");
         submenu = _this.find('ul');
         _this.attr('data-height',submenu.outerHeight());
         submenu.css({'height':0});
         link.click(function(e){
-            /*if($(this).is('a')) alert('oii')
-            e.stopPropagation();
+            /*e.stopPropagation();
             e.preventDefault();*/
            _dropdown = $(this).parents('.dropdown');
            if(_dropdown.hasClass('open')){
@@ -93,12 +80,25 @@ $(function(){
         });
     });
     
-    var queue_columns = $('.queue .c');
-    queue_columns.each(function(){
-    //dá pontos 
-    });
-    
-    queue_columns.each(function(){
-    //atribui larguras
+    /* SET POINTS TO QUEUE COLUMNS*/
+    var queues = $('.queue');
+    var _this,offset,c_offset,width,_c;
+    queues.each(function(){
+       _this = $(this);
+       offset = 0;
+       _this.find('.c').each(function(i){
+            c_offset = parseInt($(this).attr('data-offset'));
+            if(!c_offset) c_offset = 1;
+            offset += c_offset;
+       });
+       
+       width = (100/offset).toFixed(2);
+       
+        _this.find('.c').each(function(){
+        _c = $(this);
+            c_offset =  parseInt(_c.attr('data-offset'));
+            if(!c_offset) c_offset = 1;
+            _c.css('width',(c_offset * width)+'%');
+        });
     });
 });
