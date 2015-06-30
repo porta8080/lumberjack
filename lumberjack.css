@@ -1,0 +1,236 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+   font-size: 16px;   
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+button, .button{
+    cursor: pointer;
+}
+
+/* GRID */
+
+.grid .g1,.grid .g2,.grid .g3,.grid .g4,.grid .g5,.grid .g6,.grid .g7,.grid .g8,.grid .g9,.grid .g10,.grid .g11,.grid .g12,.queue .c{
+    display: inline-block;
+}
+
+.grid .g1{ width: 100%; }
+.grid .g2{ width: 16.66%; }
+.grid .g3{ width: 25%; }
+.grid .g4{ width: 33.33%; }
+.grid .g5{ width: 41.66% }
+.grid .g6{ width: 50%; }
+.grid .g7{ width: 58.33%; }
+.grid .g8{ width: 66.66%; }
+.grid .g9{ width: 75%; }
+.grid .g10{ width: 83.33%; }
+.grid .g11{ width: 91.66%; }
+.grid .g12{ width: 8.33%; }
+
+.grid .offset1{ margin-left: 100%; }
+.grid .offset2{ margin-left: 16.66%; }
+.grid .offset3{ margin-left: 25%; }
+.grid .offset4{ margin-left: 33.33%; }
+.grid .offset5{ margin-left: 41.66% }
+.grid .offset6{ margin-left: 50%;}
+.grid .offset7{ margin-left: 58.33%;}
+.grid .offset8{ margin-left: 66.66%;}
+.grid .offset9{ margin-left: 75%;}
+.grid .offset10{ margin-left: 83.33%;}
+.grid .offset11{ margin-left: 91.66%; }
+.grid .offset12{ margin-left: 8.33%; }
+
+/* QUEUE */
+
+.queue .c:nth-child(1):nth-last-child(1){
+    width: 100%;
+}
+
+.queue .c:nth-child(1):nth-last-child(2),
+.queue .c:nth-child(2):nth-last-child(1){
+    width: 50%;
+}
+
+.queue .c:nth-child(1):nth-last-child(3),
+.queue .c:nth-child(2):nth-last-child(2),
+.queue .c:nth-child(3):nth-last-child(1){
+    width: 33.3333%;
+}
+
+.queue .c:nth-child(1):nth-last-child(4),
+.queue .c:nth-child(2):nth-last-child(3),
+.queue .c:nth-child(3):nth-last-child(2),
+.queue .c:nth-child(4):nth-last-child(1){
+    width: 25%;
+}
+
+.queue .c:nth-child(1):nth-last-child(5),
+.queue .c:nth-child(2):nth-last-child(4),
+.queue .c:nth-child(3):nth-last-child(3),
+.queue .c:nth-child(4):nth-last-child(2),
+.queue .c:nth-child(5):nth-last-child(1){
+    width: 20%;
+}
+
+.queue .c:nth-child(1):nth-last-child(6),
+.queue .c:nth-child(2):nth-last-child(5),
+.queue .c:nth-child(3):nth-last-child(4),
+.queue .c:nth-child(4):nth-last-child(3),
+.queue .c:nth-child(5):nth-last-child(2),
+.queue .c:nth-child(6):nth-last-child(1){
+    width: 16.66%;
+}
+
+.queue .c:nth-child(1):nth-last-child(7),
+.queue .c:nth-child(2):nth-last-child(6),
+.queue .c:nth-child(3):nth-last-child(5),
+.queue .c:nth-child(4):nth-last-child(4),
+.queue .c:nth-child(5):nth-last-child(3),
+.queue .c:nth-child(6):nth-last-child(2),
+.queue .c:nth-child(7):nth-last-child(1){
+    width: 14.28%;
+}
+
+.queue .c:nth-child(1):nth-last-child(8),
+.queue .c:nth-child(2):nth-last-child(7),
+.queue .c:nth-child(3):nth-last-child(6),
+.queue .c:nth-child(4):nth-last-child(5),
+.queue .c:nth-child(5):nth-last-child(4),
+.queue .c:nth-child(6):nth-last-child(3),
+.queue .c:nth-child(7):nth-last-child(2),
+.queue .c:nth-child(8):nth-last-child(1){
+    width: 12.5%;
+}
+
+.queue .c:nth-child(1):nth-last-child(9),
+.queue .c:nth-child(2):nth-last-child(8),
+.queue .c:nth-child(3):nth-last-child(7),
+.queue .c:nth-child(4):nth-last-child(6),
+.queue .c:nth-child(5):nth-last-child(5),
+.queue .c:nth-child(6):nth-last-child(4),
+.queue .c:nth-child(7):nth-last-child(3),
+.queue .c:nth-child(8):nth-last-child(2),
+.queue .c:nth-child(9):nth-last-child(1){
+    width: 11.11%;
+}
+
+.queue .c:nth-child(1):nth-last-child(10),
+.queue .c:nth-child(2):nth-last-child(9),
+.queue .c:nth-child(3):nth-last-child(8),
+.queue .c:nth-child(4):nth-last-child(7),
+.queue .c:nth-child(5):nth-last-child(6),
+.queue .c:nth-child(6):nth-last-child(5),
+.queue .c:nth-child(7):nth-last-child(4),
+.queue .c:nth-child(8):nth-last-child(3),
+.queue .c:nth-child(9):nth-last-child(2),
+.queue .c:nth-child(10):nth-last-child(1){
+    width: 10%;
+}
+
+.queue .c:nth-child(1):nth-last-child(11),
+.queue .c:nth-child(2):nth-last-child(10),
+.queue .c:nth-child(3):nth-last-child(9),
+.queue .c:nth-child(4):nth-last-child(8),
+.queue .c:nth-child(5):nth-last-child(7),
+.queue .c:nth-child(6):nth-last-child(6),
+.queue .c:nth-child(7):nth-last-child(5),
+.queue .c:nth-child(8):nth-last-child(4),
+.queue .c:nth-child(9):nth-last-child(3),
+.queue .c:nth-child(10):nth-last-child(2),
+.queue .c:nth-child(11):nth-last-child(1){
+    width: 9.09%;
+}
+
+.queue .c:nth-child(1):nth-last-child(12),
+.queue .c:nth-child(2):nth-last-child(11),
+.queue .c:nth-child(3):nth-last-child(10),
+.queue .c:nth-child(4):nth-last-child(9),
+.queue .c:nth-child(5):nth-last-child(8),
+.queue .c:nth-child(6):nth-last-child(7),
+.queue .c:nth-child(7):nth-last-child(6),
+.queue .c:nth-child(8):nth-last-child(5),
+.queue .c:nth-child(9):nth-last-child(4),
+.queue .c:nth-child(10):nth-last-child(3),
+.queue .c:nth-child(11):nth-last-child(2),
+.queue .c:nth-child(12):nth-last-child(1){
+    width: 8.33%;
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.slider .item{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slider .item.active{
+    display: inline-block;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown ul{
+    position: absolute;
+    overflow: hidden;
+}
+
+.dropdown > li{
+    display: inline;
+}
+
+/* COLORS */
+
+.blue{
+    
+}
+
+.light_blue{
+    
+}
+
+.dark_blue{
+    
+}
+
+.red{
+    
+}
+
+.light_red{
+    
+}
+
+.dark_red{
+    
+}
+
+.green{
+    
+}
+
+.light_redgreen{
+    
+}
+
+.dark_green{
+    
+}
